@@ -13,18 +13,8 @@
     </head>
     <body style='text-align: center;'>
         <h1>Rectangle Response</h1>
-         <%
-                Object responseObj = request.getAttribute("myMsg");
-                Object errObj = request.getAttribute("ERROR_MSG");
-                
-                if(responseObj != null){
-                    out.println(responseObj.toString());
-                }
-                if(errObj != null) {
-                    out.println(errObj.toString());
-                }
-            %>
-            
+                 ${myMsg}
+       
             <br>
             <br>
             <a href="index.html"><img src="images/homeButton2.png" title="home" width="50" height="50" /></a>

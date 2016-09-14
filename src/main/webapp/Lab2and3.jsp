@@ -15,17 +15,7 @@
         <h1>Shape Calculators</h1>
         <a href="index.html"><img src="images/homeButton2.png" title="home" width="50" height="50" /></a><br>
           <p>
-            <% 
-                Object responseObj = request.getAttribute("myMsg");
-                Object errObj = request.getAttribute("errorMsg");
-                
-                if(responseObj != null){
-                out.println(request.getAttribute("myMsg"));
-                }
-                 if(errObj != null) {
-                    out.println(errObj.toString());
-                }   
-            %>
+           ${myMsg}
 
             
            </p>
